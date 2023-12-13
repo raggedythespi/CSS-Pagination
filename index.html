@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .pagination {
+            display: inline-block;
+        }
+
+        .pagination a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+            float: left;
+        }
+
+        .pagination0 {
+            display: inline-block;
+        }
+
+        .pagination0 a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+            float: left;
+        }
+
+        .pagination0 a.active {
+            background-color: #4CAF50;
+            color: white;
+           /* pointer-events: none; */
+        }
+
+        .pagination0 a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        .pagination1 {
+            display: inline;
+        }
+
+        .pagination1 a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+            float: left;
+        }
+
+        .pagination1 a.active1 {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .pagination1 a:hover:not(.active1) {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        .breadcrumb {
+            list-style: none;
+            background-color: #eee;
+            padding: 5px 10px;
+        } 
+
+        .breadcrumb li {
+            display: inline;
+        }
+
+        .breadcrumb li+li::before { 
+            padding: 5px;
+            content: "/\00a0";
+        }
+
+        .breadcrumb li a {color: green;}
+        
+        .breadcrumb01 {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            place-items: center;
+            text-align: center;
+            background:  #fff;
+            box-shadow: 0px .5vh 5px 0 rgba (0,0,0,0.25);
+        }
+    </style>
+    <title>CSS & HTML</title>
+</head>
+<body>
+    <h1>CSS pagination & HtML tables</h1>
+    <p>CSS pagination is used when you have lots of pages, and you may wish to add some sort of pagination to each page.</p>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <h1>Active & Hoverable Pagination</h1>
+    <div class="pagination0">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <h1>Rounded Active & Hoverable Buttons</h1>
+    <div class="pagination1">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active1">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <br>
+    <br>
+    <h1>Breadcrumb Pagination</h1>
+    <p>Another variation of pagination is so called bread-crumbs.</p>
+    <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pictures</a></li>
+        <li><a href="#">Summer 15</a></li>
+        <li>List</li>
+    </ul>
+    <div class="container">Pagination Design>
+    <ul class="breadcrumb01">
+        <!--<li><a href="#"><span class="fa-solid fa-angle-left"></span>Previous</a></li>-->
+        <li><a href="#">&laquo;</a>Previous</li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li><a href="#">10</a></li>
+        <li>Next<a href="#">&raquo;</a></li>
+    </ul>
+    </div>
+
+    
+</body>
+</html>
